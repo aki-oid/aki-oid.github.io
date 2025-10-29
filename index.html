@@ -4,25 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Portfolio</title>
+    <title>Hak | Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 style="text-align: center;">Hak</h1>
-    <h2 style="text-align: center;"><span style="text-decoration: underline;">About this site</span></h2>
-    <div style="text-align: center;">ここはエンジニア学生<strong>Hak</strong>のポートフォリオサイト<br />これまでの経験やスキルをまとめています。<br />気楽に読んでいただければ幸いです。<br /><br /></div>
-    <h2 style="text-align: center;"><span style="text-decoration: underline;">About me</span></h2>
-    <div style="text-align: center;">神奈川県出身のエンジニア学生</div>
-    <div style="text-align: center;">演劇（）の経験を通じて、技術が感動と安心を支えることに気づき、IT技術に興味を持った。</div>
-    <div style="text-align: center;">大学では情報システムを学び、複数のアプリ開発を通してスキルを磨いています。</div>
-    <div style="text-align: center;">メディア工学を主とする研究室に所属し、演劇</div>
-    <div style="text-align: center;">&nbsp;</div>
-    <p style="text-align: center;">&nbsp;</p>
-    <h2 style="text-align: center;"><span style="text-decoration: underline;">Works</span></h2>
-    <p style="text-align: center;">&nbsp;</p>
-    <h2 style="text-align: center;"><span style="text-decoration: underline;">My skill set</span></h2>
-    <p style="text-align: center;">&nbsp;</p>
-    <h2 style="text-align: center;">&nbsp;</h2>
+    <header>
+        <div class="container">
+            <h1>Hak's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>エンジニア学生 **Hak**</h2>
+                <p>これまでの経験やスキルをまとめています。<br>気楽に読んでいただければ幸いです。</p>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2><span class="section-title">About me</span></h2>
+                <div class="content-box">
+                    <h3>🧑‍💻 神奈川県出身のエンジニア学生</h3>
+                    <p>演劇の経験を通じて、**技術が感動と安心を支える**ことに気づき、IT技術に興味を持ちました。</p>
+                    <p>大学では情報システムを学び、複数のアプリ開発を通してスキルを磨いています。</p>
+                    <p>メディア工学を主とする研究室に所属し、人間の五感と情報技術の融合（VRなど）をテーマに、学会発表やコンペティションへの参加を目指し研究を進めています。</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>💡 私の強み</h3>
+                    <p>私の強みは**課題発見力**と、**周囲を巻き込みながら改善を実現する力**です。</p>
+                    <p>8人チームで取り組んだDVDレンタルシステムの開発では、PMとしてチーム全体の進行管理と技術支援を担当しました。</p>
+                    <p>開発初期にメンバー間のスキル差から作業が停滞していると気づき、共有ツールなどを活用して進捗の可視化と情報共有を徹底し、効率的な開発体制を構築しました。さらに、得意分野を活かした役割再設計を行い、全員が主体的に動ける環境を整えました。</p>
+                    <p>その結果、プロジェクトは安定して進行し、**完成度の高さが評価され最優秀賞を受賞**することができました。個人としても次年度のSAにスカウトされました。</p>
+                    <p class="strength-summary">この経験を通じて、**チームの強みを引き出しながら成果を上げるマネジメント力**と、**課題を見極め柔軟に解決へ導く調整力**を培いました。今後は多様なメンバーや顧客と協働し、最適なソリューションを形にできる力を磨いていきたいです。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="works" class="section works">
+            <div class="container">
+                <h2><span class="section-title">Works / 開発実績</span></h2>
+                <div class="work-list">
+                    <div class="work-item">
+                        <p>**Webカレンダー(チーム・個人)**</p>
+                        <p>使用技術: C/C++, HTML/CSS, SQL, git</p>
+                        <p>概要: 8人チームで取り組んだDVDレンタルシステムや、個人開発のWebカレンダーアプリ。</p>
+                    </div>
+                    <div class="work-item">
+                        <p>**データ収集・分析システム**</p>
+                        <p>使用技術: Python, R</p>
+                        <p>概要: 楽曲分析システムなど、データ収集・分析処理を行うシステム。</p>
+                    </div>
+                    <div class="work-item">
+                        <p>**3Dシミュレーションシステム**</p>
+                        <p>使用技術: OpenGL, Blender, OpenCV</p>
+                        <p>概要: 手旗信号3Dシミュレーションや画像消失点探索システムなどを開発。</p>
+                    </div>
+                    <div class="work-item">
+                        <p>**その他**</p>
+                        <p>使用技術: Java, PHP, WordPress</p>
+                        <p>概要: Web上のゲームアプリ、ECサイト制作（Welcart利用）など。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2><span class="section-title">My skill set</span></h2>
+                
+                <div class="skill-group">
+                    <h3>🎯 技術習得度</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>言語</th>
+                                <th>経験年数</th>
+                                <th>習熟度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C/C++</td>
+                                <td>2年</td>
+                                <td>リファレンスなしで使用可能</td>
+                            </tr>
+                            <tr>
+                                <td>HTML・CSS</td>
+                                <td>2年</td>
+                                <td>リファレンスなしで使用可能</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>1年</td>
+                                <td>リファレンスがあれば使用可能</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>1年</td>
+                                <td>リファレンスがあれば使用可能</td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td>半年</td>
+                                <td>基礎的な文法を理解し、簡単なWebページを作成できる</td>
+                            </tr>
+                            <tr>
+                                <td>R</td>
+                                <td>半年</td>
+                                <td>データ分析の基礎的な処理を行える</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>半年</td>
+                                <td>現在学習中、基本的な操作を行える</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="skill-group">
+                    <h3>🎓 資格・技術スタック</h3>
+                    <div class="tag-list">
+                        <span class="skill-tag">基本情報技術者試験 (2024年9月)</span>
+                        <span class="skill-tag">ITパスポート (2023年8月)</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">3DCG制作ツール (Blender, Maya, Houdiniなど)</span>
+                        <span class="skill-tag">CI/CD および開発支援技術 (git, Jenkins, AWS codebuildなど)</span>
+                        <span class="skill-tag">UXデザイン・デザイン</span>
+                        <span class="skill-tag">シェーディング言語 (GLSL, HLSL, MSLなど)</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>🛠️ その他ツール・経験</h3>
+                    <ul class="tool-list">
+                        <li>**3Dプリンター**: 筐体試作に1か月使用</li>
+                        <li>**Docker**: Webカレンダーのチーム開発で半年使用</li>
+                        <li>**WordPress + Welcart**: ECサイト制作に半年使用</li>
+                        <li>**VirtualBox**: Linuxの仮想環境構築に1年利用</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hak's Portfolio</p>
+        </div>
+    </footer>
 </body>
 
 </html>
