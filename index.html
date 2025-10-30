@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hak | Engineer Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -25,8 +26,11 @@
     <main>
         <section id="hero" class="hero">
             <div class="container">
-                <h2>エンジニア学生 Hak</h2>
+                <h2>エンジニア学生 <strong>Hak</strong></h2>
                 <p>これまでの経験やスキルをまとめています。<br>気楽に読んでいただければ幸いです。</p>
+                <div class="social-links">
+                    <a href="https://github.com/aki-oid" target="_blank" class="github-link"><i class="fab fa-github"></i> Go to GitHub</a>
+                </div>
             </div>
         </section>
 
@@ -35,18 +39,18 @@
                 <h2><span class="section-title">About me</span></h2>
                 <div class="content-box">
                     <h3>🧑‍💻 神奈川県出身のエンジニア学生</h3>
-                    <p>演劇の経験を通じて、**技術が感動と安心を支える**ことに気づき、IT技術に興味を持ちました。</p>
+                    <p>演劇の経験を通じて、<strong>技術が感動と安心を支える</strong>ことに気づき、IT技術に興味を持ちました。</p>
                     <p>大学では情報システムを学び、複数のアプリ開発を通してスキルを磨いています。</p>
-                    <p>メディア工学を主とする研究室に所属し、人間の五感と情報技術の融合（VRなど）をテーマに、学会発表やコンペティションへの参加を目指し研究を進めています。</p>
+                    <p>メディア工学やHCI分野を主とする研究室に所属し、人間の五感と情報技術の融合をテーマに、学会発表やコンペティションへの参加を目指し研究を進めています。</p>
                 </div>
 
                 <div class="content-box">
                     <h3>💡 私の強み</h3>
-                    <p>私の強みは**課題発見力**と、**周囲を巻き込みながら改善を実現する力**です。</p>
+                    <p>私の強みは<mark>課題発見力</mark>と、<mark>周囲を巻き込みながら改善を実現する力</mark>です。</p>
                     <p>8人チームで取り組んだDVDレンタルシステムの開発では、PMとしてチーム全体の進行管理と技術支援を担当しました。</p>
                     <p>開発初期にメンバー間のスキル差から作業が停滞していると気づき、共有ツールなどを活用して進捗の可視化と情報共有を徹底し、効率的な開発体制を構築しました。さらに、得意分野を活かした役割再設計を行い、全員が主体的に動ける環境を整えました。</p>
-                    <p>その結果、プロジェクトは安定して進行し、**完成度の高さが評価され最優秀賞を受賞**することができました。個人としても次年度のSAにスカウトされました。</p>
-                    <p class="strength-summary">この経験を通じて、**チームの強みを引き出しながら成果を上げるマネジメント力**と、**課題を見極め柔軟に解決へ導く調整力**を培いました。今後は多様なメンバーや顧客と協働し、最適なソリューションを形にできる力を磨いていきたいです。</p>
+                    <p>その結果、プロジェクトは安定して進行し、<strong>完成度の高さが評価され最優秀賞を受賞</strong>することができました。個人としても次年度のSAにスカウトされました。</p>
+                    <p class="strength-summary">この経験を通じて、<mark>チームの強みを引き出しながら成果を上げるマネジメント力</mark>と、<mark>課題を見極め柔軟に解決へ導く調整力</mark>を培いました。今後は多様なメンバーや顧客と協働し、最適なソリューションを形にできる力を磨いていきたいです。</p>
                 </div>
             </div>
         </section>
@@ -54,27 +58,62 @@
         <section id="works" class="section works">
             <div class="container">
                 <h2><span class="section-title">Works / 開発実績</span></h2>
+                <p class="section-description">作品の画像や動画、GitHubリンクを公開しています。</p>
+
                 <div class="work-list">
                     <div class="work-item">
-                        <p>**Webカレンダー(チーム・個人)**</p>
-                        <p>使用技術: C/C++, HTML/CSS, SQL, git</p>
-                        <p>概要: 8人チームで取り組んだDVDレンタルシステムや、個人開発のWebカレンダーアプリ。</p>
+                        <div class="media-responsive">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cX_Yg3f7FXI?si=6DDbkmhz-sxDoybc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3>Webカレンダー</h3>
+                        <p><strong>概要:</strong> dockerやsqlを用いたWebカレンダーアプリ。基本的機能は実装済み</p>
+                        <p><strong>使用技術:</strong> Python,C/C++, HTML/CSS, SQL, git, docker</p>
+                        <p>開発時期：2025年1月</p>
+                        <a href="https://github.com/YourGitHubID/project1" target="_blank" class="work-github-link">
+                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
+                        </a>
                     </div>
+                    
                     <div class="work-item">
-                        <p>**データ収集・分析システム**</p>
-                        <p>使用技術: Python, R</p>
-                        <p>概要: 楽曲分析システムなど、データ収集・分析処理を行うシステム。</p>
+                        <div class="media-image-box">
+                            <img src="movie_3Drobot.mp4" alt="手旗信号3Dシミュレーションの画面" class="work-image">
+                        </div>
+                        
+                        <h3>手旗信号3Dシミュレーションシステム</h3>
+                        <p><strong>概要:</strong> OpenGLを用いた手旗信号シミュレーションシステム。教官と一緒に手旗信号を学べます。</p>
+                        <p><strong>使用技術:</strong> C++, OpenGL</p>
+                        <a href="https://github.com/YourGitHubID/project3" target="_blank" class="work-github-link">
+                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
+                        </a>
                     </div>
+                    
                     <div class="work-item">
-                        <p>**3Dシミュレーションシステム**</p>
-                        <p>使用技術: OpenGL, Blender, OpenCV</p>
-                        <p>概要: 手旗信号3Dシミュレーションや画像消失点探索システムなどを開発。</p>
+                        <div class="media-placeholder">
+                            <div class="placeholder-text">作品の画像/動画エリア (サイズ: 300x200)</div>
+                        </div>
+                        <h3>画像消失点探索システム</h3>
+                        <p><strong>概要:</strong> OpenCVを用いた画像消失点探索システム。</p>
+                        <p><strong>使用技術:</strong> C++, OpenCV</p>
+                        <a href="https://github.com/YourGitHubID/project3" target="_blank" class="work-github-link">
+                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
+                        </a>
                     </div>
+                    
                     <div class="work-item">
-                        <p>**その他**</p>
-                        <p>使用技術: Java, PHP, WordPress</p>
-                        <p>概要: Web上のゲームアプリ、ECサイト制作（Welcart利用）など。</p>
+                        <h3>データ収集・分析システム</h3>
+                        <p><strong>概要:</strong> 楽曲分析や単語頻出分析システムなど、データ収集・分析処理を行うシステム。</p>
+                        <p><strong>使用技術:</strong> Python, R</p>
+                        <a href="https://github.com/YourGitHubID/project3" target="_blank" class="work-github-link">
+                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
+                        </a>
                     </div>
+                    
+                    <div class="work-item">
+                        <h3>その他</h3>
+                        <p><strong>概要: </strong>Web上のゲームアプリ、ECサイト制作（Welcart利用）など。</p>
+                        <p><strong>使用技術:</strong>Java, PHP, WordPress</p>
+                        </div>
+
                 </div>
             </div>
         </section>
@@ -96,7 +135,7 @@
                         <tbody>
                             <tr>
                                 <td>C/C++</td>
-                                <td>2年</td>
+                                <td>3年</td>
                                 <td>リファレンスなしで使用可能</td>
                             </tr>
                             <tr>
@@ -105,13 +144,13 @@
                                 <td>リファレンスなしで使用可能</td>
                             </tr>
                             <tr>
-                                <td>Java</td>
-                                <td>1年</td>
+                                <td>Python</td>
+                                <td>2年</td>
                                 <td>リファレンスがあれば使用可能</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
-                                <td>1年</td>
+                                <td>Java</td>
+                                <td>2年</td>
                                 <td>リファレンスがあれば使用可能</td>
                             </tr>
                             <tr>
@@ -127,7 +166,7 @@
                             <tr>
                                 <td>SQL</td>
                                 <td>半年</td>
-                                <td>現在学習中、基本的な操作を行える</td>
+                                <td>基本的なデータ操作を行える</td>
                             </tr>
                         </tbody>
                     </table>
@@ -138,22 +177,22 @@
                     <div class="tag-list">
                         <span class="skill-tag">基本情報技術者試験 (2024年9月)</span>
                         <span class="skill-tag">ITパスポート (2023年8月)</span>
+                        <span class="skill-tag">git</span>
                         <span class="skill-tag">Linux</span>
                         <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">シェーディング言語 (OpenGL)</span>
                         <span class="skill-tag">3DCG制作ツール (Blender, Maya, Houdiniなど)</span>
-                        <span class="skill-tag">CI/CD および開発支援技術 (git, Jenkins, AWS codebuildなど)</span>
                         <span class="skill-tag">UXデザイン・デザイン</span>
-                        <span class="skill-tag">シェーディング言語 (GLSL, HLSL, MSLなど)</span>
                     </div>
                 </div>
 
                 <div class="skill-group">
                     <h3>🛠️ その他ツール・経験</h3>
                     <ul class="tool-list">
-                        <li>**3Dプリンター**: 筐体試作に1か月使用</li>
-                        <li>**Docker**: Webカレンダーのチーム開発で半年使用</li>
-                        <li>**WordPress + Welcart**: ECサイト制作に半年使用</li>
-                        <li>**VirtualBox**: Linuxの仮想環境構築に1年利用</li>
+                        <li><strong>3Dプリンター</strong>: 筐体試作に1か月使用</li>
+                        <li><strong>Docker</strong>: Webカレンダーのチーム開発で半年使用</li>
+                        <li><strong>WordPress + Welcart</strong>: ECサイト制作に半年使用</li>
+                        <li><strong>VirtualBox</strong>: Linuxの仮想環境構築に1年利用</li>
                     </ul>
                 </div>
 
@@ -163,6 +202,9 @@
 
     <footer>
         <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/YourGitHubID" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+            </div>
             <p>&copy; 2025 Hak's Portfolio</p>
         </div>
     </footer>
