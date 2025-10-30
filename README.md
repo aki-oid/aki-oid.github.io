@@ -8,7 +8,7 @@
 
 制作したポートフォリオサイトは、以下のURLからご確認いただけます。
 
-[![Portfolio Site](https://aki-oid.github.io)]
+[![Portfolio Site](https://img.shields.io/badge/LIVE_DEMO-007ACC?style=for-the-badge&logo=vercel&logoColor=white)](https://aki-oid.github.io)
 
 ---
 
