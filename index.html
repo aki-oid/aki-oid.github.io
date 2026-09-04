@@ -5,38 +5,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hak | Engineer Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 	<header>
-		<div class="container">
-			<h1>Hak's Portfolio</h1>
+		<div class="container nav-container">
+			<a href="#hero" class="logo">&lt;Hak<span class="logo-accent">/</span>&gt;</a>
 			<nav>
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#works">Works</a></li>
-					<li><a href="#skills">Skills</a></li>
+					<li><a href="#about"><span class="nav-num">01.</span>About</a></li>
+					<li><a href="#learning"><span class="nav-num">02.</span>Learning</a></li>
+					<li><a href="#works"><span class="nav-num">03.</span>Works</a></li>
+					<li><a href="#skills"><span class="nav-num">04.</span>Skills</a></li>
 				</ul>
 			</nav>
+			<a href="https://github.com/aki-oid" target="_blank" class="nav-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
 		</div>
 	</header>
 
 	<main>
 		<section id="hero" class="hero">
-			<div class="container">
-				<h2>エンジニア学生 <strong>Hak</strong></h2>
-				<p>これまでの経験やスキルをまとめています。<br>気楽に読んでいただければ幸いです。</p>
-				<div class="social-links">
-					<a href="https://github.com/aki-oid" target="_blank" class="github-link"><i class="fab fa-github"></i> Go to GitHub</a>
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<p class="hero-eyebrow"><span class="dot-live"></span>STUDENT ENGINEER</p>
+					<h2>こんにちは、<span class="gradient-text">Hak</span> です。</h2>
+					<p class="hero-lead">画像処理・3Dグラフィックス・対話型システムをつくりながら、<br>いまは生成AI・機械学習の学習に力を入れています。</p>
+					<div class="hero-actions">
+						<a href="#works" class="btn btn-primary">Works を見る</a>
+						<a href="https://github.com/aki-oid" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+					</div>
+				</div>
+				<div class="terminal-card">
+					<div class="terminal-header">
+						<span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+						<span class="terminal-title">profile.sh</span>
+					</div>
+					<div class="terminal-body">
+						<p><span class="prompt">$</span> whoami</p>
+						<p class="output">Hak — 神奈川県出身 / 情報システム専攻</p>
+						<p><span class="prompt">$</span> cat status.txt</p>
+						<p class="output">研究室: IT × HCI</p>
+						<p class="output">現在地: AI・機械学習を学習中<span class="cursor">_</span></p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="about" class="section about">
 			<div class="container">
-				<h2><span class="section-title">About me</span></h2>
+				<div class="section-head">
+					<span class="section-num">01</span>
+					<h2>About</h2>
+				</div>
 				<div class="content-box">
 					<h3>神奈川県出身のエンジニア学生</h3>
 					<p>演劇の裏方経験を通じて、<strong>技術が感動と安心を支える</strong>ことに気づき、IT技術に興味を持ちました。</p>
@@ -45,72 +70,141 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="learning" class="section learning">
+			<div class="container">
+				<div class="section-head">
+					<span class="section-num">02</span>
+					<h2>Now Learning</h2>
+				</div>
+				<p class="section-description">今まさに力を入れて学んでいる分野です。プロジェクトへの応用も進めています。</p>
+
+				<div class="learning-grid">
+					<div class="learning-item">
+						<span class="learning-tag"><span class="pulse-dot"></span>学習中</span>
+						<i class="fa-solid fa-wand-magic-sparkles"></i>
+						<h3>生成AI・LLM活用</h3>
+						<p>OpenAI APIを用いたプロンプト設計や対話型システムへの応用を実践中。手旗信号3Dシミュレーション(SemaphorAI)にも活用しています。</p>
+					</div>
+					<div class="learning-item">
+						<span class="learning-tag"><span class="pulse-dot"></span>学習中</span>
+						<i class="fa-solid fa-brain"></i>
+						<h3>機械学習・深層学習の基礎</h3>
+						<p>モデルの仕組みや学習の流れを理解しながら、フレームワークを用いた基礎的な実装を学んでいます。</p>
+					</div>
+					<div class="learning-item">
+						<span class="learning-tag"><span class="pulse-dot"></span>学習中</span>
+						<i class="fa-solid fa-eye"></i>
+						<h3>画像認識・AIを用いた画像処理</h3>
+						<p>OpenCVでの画像処理経験を土台に、機械学習を活用した画像認識へと発展させています。</p>
+					</div>
+					<div class="learning-item">
+						<span class="learning-tag"><span class="pulse-dot"></span>学習中</span>
+						<i class="fa-solid fa-comments"></i>
+						<h3>自然言語処理（NLP）</h3>
+						<p>形態素解析などのテキスト処理の経験を発展させ、NLP分野への理解を深めています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section id="works" class="section works">
-            <div class="container">
-                <h2><span class="section-title">Works / 開発実績</span></h2>
-                <p class="section-description">作品の画像や動画、GitHubリンクを公開しています。</p>
+			<div class="container">
+				<div class="section-head">
+					<span class="section-num">03</span>
+					<h2>Works</h2>
+				</div>
+				<p class="section-description">作品の画像や動画、GitHubリンクを公開しています。</p>
 
-                <div class="work-list">
-                    <div class="work-item">
-                        <div class="media-image-box">
-                            <img src="vanish.png" alt="画像消失点探索システムの画面" class="work-image">
-                        </div>
-                        <h3>画像消失点探索システム</h3>
-                        <p><strong>概要:</strong> OpenCVを用いた画像消失点探索システム。</p>
-                        <p><strong>使用技術:</strong> C++, OpenCV</p>
-                        <p><strong>開発時期:</strong>2025年9月</p>
-                        <a href="https://github.com/aki-oid/Vanishing_Point" target="_blank" class="work-github-link">
-                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
-                        </a>
-                    </div>
-                    
-                    <div class="work-item">
-                        <div class="media-responsive">
-                            <iframe src="https://www.youtube.com/embed/OkK_AGeXnu0?si=b3ISwz1AXKWq4QWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        
-                        <h3>手旗信号3Dシミュレーションシステム</h3>
-                        <p><strong>概要:</strong> openAIとOpenGLを用いた手旗信号シミュレーションシステム。教官と一緒に手旗信号を学べます。</p>
-                        <p><strong>使用技術:</strong> C, OpenGL, python, openAI, 音声合成, TCPソケット通信</p>
-                        <p><strong>開発時期:</strong>2025年7月(12月更新)</p>
-                        <a href="https://github.com/aki-oid/SemaphorAI" target="_blank" class="work-github-link">
-                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
-                        </a>
-                    </div>
-                    
-                    <div class="work-item">
-                        <div class="media-responsive">
-                            <iframe src="https://www.youtube.com/embed/cX_Yg3f7FXI?si=6DDbkmhz-sxDoybc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h3>Webカレンダー</h3>
-                        <p><strong>概要:</strong> DockerやSQLを用いたWebカレンダーアプリ。基本的機能は実装済み。</p>
-                        <p><strong>使用技術:</strong> Python, HTML/CSS, SQL, Docker, git</p>
-                        <p><strong>開発時期:</strong>2025年1月</p>
-                        <a href="https://github.com/aki-oid/Calender" target="_blank" class="work-github-link">
-                            <i class="fab fa-github"></i> 詳細を見る (GitHub)
-                        </a>
-                    </div>
+				<div class="work-list">
+					<div class="work-item">
+						<div class="media-image-box">
+							<img src="vanish.png" alt="画像消失点探索システムの画面" class="work-image">
+						</div>
+						<div class="work-meta"><i class="fa-regular fa-calendar"></i> 2025年9月</div>
+						<h3>画像消失点探索システム</h3>
+						<p>OpenCVを用いた画像消失点探索システム。</p>
+						<div class="tech-tags">
+							<span class="tech-tag">C++</span>
+							<span class="tech-tag">OpenCV</span>
+						</div>
+						<a href="https://github.com/aki-oid/Vanishing_Point" target="_blank" class="work-github-link">
+							<i class="fab fa-github"></i> 詳細を見る
+						</a>
+					</div>
 
-                    <div class="work-item">
-                        <h3>データ収集・分析システム</h3>
-                        <p><strong>概要:</strong> 単語頻出分析や楽曲分析など、データ収集・分析処理を行うシステム。</p>
-                        <p><strong>使用技術:</strong> Python, Java, R</p>
-                        <p><strong>開発時期:</strong>2024年～</p>
-                        </div>
-                    
-                    <div class="work-item">
-                        <h3>その他</h3>
-                        <p><strong>概要:</strong> Web上のゲームアプリ、ECサイト制作（Welcart利用）など。</p>
-                        <p><strong>使用技術:</strong>Java, PHP, WordPressなど</p>
-                        <p><strong>開発時期:</strong>2023年〜</p>
-                        </div>
+					<div class="work-item">
+						<div class="media-responsive">
+							<iframe src="https://www.youtube.com/embed/OkK_AGeXnu0?si=b3ISwz1AXKWq4QWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="work-meta"><i class="fa-regular fa-calendar"></i> 2025年7月（12月更新）</div>
+						<h3>手旗信号3Dシミュレーションシステム</h3>
+						<p>OpenAIとOpenGLを用いた手旗信号シミュレーションシステム。教官と一緒に手旗信号を学べます。</p>
+						<div class="tech-tags">
+							<span class="tech-tag">C</span>
+							<span class="tech-tag">OpenGL</span>
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">OpenAI</span>
+							<span class="tech-tag">音声合成</span>
+							<span class="tech-tag">TCPソケット</span>
+						</div>
+						<a href="https://github.com/aki-oid/SemaphorAI" target="_blank" class="work-github-link">
+							<i class="fab fa-github"></i> 詳細を見る
+						</a>
+					</div>
 
-                </div>
-            </div>
-        </section>
+					<div class="work-item">
+						<div class="media-responsive">
+							<iframe src="https://www.youtube.com/embed/cX_Yg3f7FXI?si=6DDbkmhz-sxDoybc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="work-meta"><i class="fa-regular fa-calendar"></i> 2025年1月</div>
+						<h3>Webカレンダー</h3>
+						<p>DockerやSQLを用いたWebカレンダーアプリ。基本的機能は実装済み。</p>
+						<div class="tech-tags">
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">HTML/CSS</span>
+							<span class="tech-tag">SQL</span>
+							<span class="tech-tag">Docker</span>
+							<span class="tech-tag">Git</span>
+						</div>
+						<a href="https://github.com/aki-oid/Calender" target="_blank" class="work-github-link">
+							<i class="fab fa-github"></i> 詳細を見る
+						</a>
+					</div>
+
+					<div class="work-item">
+						<div class="work-icon-box"><i class="fa-solid fa-chart-column"></i></div>
+						<div class="work-meta"><i class="fa-regular fa-calendar"></i> 2024年〜</div>
+						<h3>データ収集・分析システム</h3>
+						<p>単語頻出分析や楽曲分析など、データ収集・分析処理を行うシステム。</p>
+						<div class="tech-tags">
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Java</span>
+							<span class="tech-tag">R</span>
+						</div>
+					</div>
+
+					<div class="work-item">
+						<div class="work-icon-box"><i class="fa-solid fa-layer-group"></i></div>
+						<div class="work-meta"><i class="fa-regular fa-calendar"></i> 2023年〜</div>
+						<h3>その他</h3>
+						<p>Web上のゲームアプリ、ECサイト制作（Welcart利用）など。</p>
+						<div class="tech-tags">
+							<span class="tech-tag">Java</span>
+							<span class="tech-tag">PHP</span>
+							<span class="tech-tag">WordPress</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section id="skills" class="section skills">
 			<div class="container">
-				<h2><span class="section-title">My skill set</span></h2>
+				<div class="section-head">
+					<span class="section-num">04</span>
+					<h2>Skills</h2>
+				</div>
 
 				<div class="skill-group">
 					<h3>開発言語・技術</h3>
@@ -238,7 +332,7 @@
 				</div>
 			</div>
 		</section>
-		<a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+		<a class="pagetop" href="#hero"><div class="pagetop__arrow"></div></a>
 	</main>
 
 	<footer>
@@ -246,7 +340,8 @@
 			<div class="footer-links">
 				<a href="https://github.com/aki-oid" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
 			</div>
-			<p>&copy; 2025 Hak's Portfolio</p>
+			<p class="footer-note">// built with HTML, CSS &amp; curiosity</p>
+			<p>&copy; 2026 Hak's Portfolio</p>
 		</div>
 	</footer>
 </body>
